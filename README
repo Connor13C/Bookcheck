@@ -1,0 +1,25 @@
+
+To Make:
+	make
+	
+To Run:
+	./Bookcheck -- bookcheck will print to console usage for BookCheck as follows:
+			Usage for this program:
+			Option 1:
+				Command line argument example: ./BookCheck textfileExample.txt
+				textfileExample.txt is the name of the file to check
+				The Program will print out every word used the document and the number of times the word is used followed by the reading level of the file. Punctuation and Symbols are considered words.
+			Option 2:
+				Command line argument: ./BookCheck textfileExample.txt filesToCompare.txt; 
+				textfileExample.txt is the name of the file to check
+				filesToCompare is the text file containing the names of the files to compare against
+				The Program will print out the file in your list that is most like the 1st argument text file and its' reading level
+			Option 3:
+				Command line argument: ./BookCheck textfileExample.txt filesToCompare.txt 0.0 100.0
+				textfileExample.txt is the name of the file to check
+				filesToCompare is the text file containing the names of the files to compare against
+				0.0 is an example of the lower bound of the range of reading level desired
+				100.0 is an example of the upper bound of the range of reading level desired
+				The Program will print out the file in your list that is most like the 1st argument text file within the reading level desired and its' reading level.
+To Remove:
+	make clean
